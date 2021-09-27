@@ -14,4 +14,8 @@ export class BookService {
   getBooks(){
     return this.http.get(`${this.baseUrl}/books`);
   }
+
+  findBookIsbn(isbn:String){
+    return this.http.get(`${this.baseUrl}/${isbn}`);
+  }
 }

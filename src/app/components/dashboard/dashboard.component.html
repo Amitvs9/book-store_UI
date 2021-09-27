@@ -1,7 +1,45 @@
-<div class="bootstrap-wrapper">
 
-    <div class="container text-center mt">
-        <h1>Welcome Admin !!</h1>
-        <button mat-raised-button (click)="getBooks()">Books</button>
-    </div>
+<div class="container mt" >
+<mat-toolbar><h3>All books</h3></mat-toolbar>
 </div>
+
+
+<div class="containor" *ngIf="!book">
+<mat-grid-list cols="3" >
+    <mat-grid-tile *ngFor= "let book of books">
+        <mat-card class="bookTitle">
+        <mat-card-header>
+        <img mat-card-image src="{{book.image}}" alt="{{book.title}}"/>
+        </mat-card-header>
+        <mat-card-content class="text-center">
+            <mat-card-title >
+                <a (click)="findBookByIsbn(book.isbn)" mat-icon-button > <h5>{{book.title}}</h5></a>
+            </mat-card-title>
+        </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<div class="containor" *ngIf="book">
+    <div class="row">
+    <mat-grid-list cols="3" >
+        <mat-grid-tile >
+            <mat-card class="bookTitle">
+            <mat-card-header>
+            <img mat-card-image src="{{book.image}}" alt="{{book.title}}"/>
+            <mat-card-title style="align-self:center;">
+                <h5>{{book.title}}</h5>
+            </mat-card-title>
+            <mat-card-subtitle>ISBN: {{book.isbn}}</mat-card-subtitle>
+            <mat-card-subtitle>PRICE: {{book.price}}</mat-card-subtitle>
+            <mat-card-subtitle>AUTHOR: {{book.authors}}</mat-card-subtitle>
+            <mat-card-subtitle>PUBLISHERS: {{book.publisher}}</mat-card-subtitle>
+            <mat-card-subtitle>PAGES: {{book.pages}}</mat-card-subtitle>
+            <mat-card-subtitle>LANGUAGE: {{book.language}}</mat-card-subtitle>
+            </mat-card-header>
+            </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    </div>

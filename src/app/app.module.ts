@@ -16,6 +16,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginService } from './service/login.service';
 import { AuthGuard } from './service/auth.guard';
 import { AuthInterceptor } from './service/auth.interceptor';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -35,9 +37,9 @@ import { AuthInterceptor } from './service/auth.interceptor';
     MatInputModule,
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
-
-  
+    HttpClientModule,
+    MatGridListModule,
+    MatCardModule
   ], 
   providers: [LoginService,AuthGuard, [{provide: HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi:true} ]],
   bootstrap: [AppComponent]
