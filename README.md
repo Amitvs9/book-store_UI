@@ -83,6 +83,9 @@ Now application is up and running
  
 <img width="1176" alt="UserExist" src="https://user-images.githubusercontent.com/45259611/135732224-a50a2d66-1c38-4787-a56b-0b72f0be3c39.png">
 
+### Coverage
+
+<img width="1244" alt="Coverage" src="https://user-images.githubusercontent.com/45259611/135734698-dcd1ce48-6a3c-400f-9ee8-19aafb12e586.png">
 
 
 
