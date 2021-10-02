@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BookhomeComponent } from './components/bookhome/bookhome.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { AuthGuard } from './service/auth.guard';
 
 
@@ -11,7 +11,13 @@ const routes: Routes = [
 
   {
     path:'',
-    component:BookhomeComponent,
+    component: LoginComponent,
+    pathMatch: 'full'
+  },
+
+  {
+    path:'signup',
+    component: SignupComponent,
     pathMatch: 'full'
   },
   {

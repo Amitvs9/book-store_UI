@@ -18,6 +18,10 @@ import { AuthGuard } from './service/auth.guard';
 import { AuthInterceptor } from './service/auth.interceptor';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { SignupComponent } from './components/signup/signup.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import {MatCardModule} from '@angular/material/card';
     NavbarComponent,
     LoginComponent,
     BookhomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    SignupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,8 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     HttpClientModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule
   ], 
   providers: [LoginService,AuthGuard, [{provide: HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi:true} ]],
   bootstrap: [AppComponent]

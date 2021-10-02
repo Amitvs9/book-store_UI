@@ -1,0 +1,36 @@
+.container {
+    padding: 16px;
+}
+
+.custom-card {
+    display: inline-block;
+    padding: 7px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+.card-image img {
+    max-width: 40vw;
+    max-height: 400px;
+}
+.card-details {
+    text-align: center;
+}
+.card-details p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.card-details p:hover {
+    cursor: pointer;
+    color: rgb(70, 70, 170);
+    text-decoration: underline;
+}
+.app-space{
+    flex: 1 1 auto;
+}
+.bookTitle{
+    display: flex;
+    direction: row;
+
+}
+.card-margin-top{
+    margin-top: 50px;
+}

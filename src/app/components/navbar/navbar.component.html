@@ -1,10 +1,12 @@
 <mat-toolbar color="primary">
-<span><a mat-icon-button router-link="/"></a>Book-Store</span>
+<span><a mat-icon-button routerLink="/"></a>Book-Store</span>
 
 <span class="app-space"></span>
-<a *ngIf ="!loggedIn" mat-icon-button router-link="/login">login</a>
-<a *ngIf = "loggedIn" mat-icon-button >User</a>
-<a *ngIf = "loggedIn" (click)="logout()" mat-icon-button >logout</a>
+<a *ngIf ="!loggedIn" mat-icon-button routerLink="/login">login</a>
+<a *ngIf ="!loggedIn" mat-icon-button routerLink="/signup" >signup</a>
+<a *ngIf = "loggedIn" mat-icon-button ><span class=" mright">{{user.username}}</span></a>
+<a *ngIf = "loggedIn" (click)="logout()" mat-icon-button ><span class=" mleft10">logout</span></a>
 
 
 </mat-toolbar>
+

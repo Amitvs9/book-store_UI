@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from 'src/app/service/book.service';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,10 +11,14 @@ export class DashboardComponent implements OnInit {
 
   books:any
   book:any
-  constructor(private bookService:BookService) { }
+  constructor(private bookService:BookService, private _location: Location) { }
 
   ngOnInit(): void {
-    this.getBooks()
+    this.getBooks();
+  }
+
+  back(){
+   location.reload();
   }
 
   getBooks(){
@@ -21,6 +26,7 @@ export class DashboardComponent implements OnInit {
       books=>{
         console.log(books);
         this.books = books;
+        return books;
       },
      error=>{
        console.log(error);

@@ -2,48 +2,34 @@
 
     <div class="container mt">
 
-<div class="container text-center">
+        <div class="container text-center">
 
-    <img
-    class="image-fluid"
-    style="width:100px"
-    src="/assets/book.png"/>
-</div>
+            <img class="image-fluid" style="width:150px" src="/assets/books.png" />
+        </div>
 
         <div class="col-md-6 offset-md-3">
-                <h1 class="text-center">Login</h1>
+            <h1 class="text-center">Login</h1>
 
-                <form (ngSubmit)="onSubmit()">                  
-                   
-                    <mat-form-field class="full-width">
-                        <mat-label>Username</mat-label>
-                        <input name="userName"
-                        [(ngModel)]= "credentials.userName"
-                        required
-                        type="text" matInput />
+            <form (ngSubmit)="onSubmit()">
 
-                    </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input name="userName" [(ngModel)]="credentials.username" required type="text" matInput />
 
-                    <mat-form-field class="full-width">
-                        <mat-label>Password</mat-label>
-                        <input name="passwrord"
-                        [(ngModel)]= "credentials.password"
-                        required
-                        type="password" matInput />
+                </mat-form-field>
 
-                    </mat-form-field>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input name="passwrord" [(ngModel)]="credentials.password" required type="password" matInput />
 
-                    <div class="container text-center">
-                        
-                        <button type="submit" mat-raised-button color="primary">Login</button>
+                </mat-form-field>
 
-                        <button type="submit" style= "margin-left: 10px;" mat-raised-button color="accent">Reset</button>
+                <div class="container text-center">
 
+                    <button type="submit" mat-raised-button color="primary">Login</button>
 
-                    </div>
-
-
-                </form>
+                </div>
+            </form>
         </div>
 
 

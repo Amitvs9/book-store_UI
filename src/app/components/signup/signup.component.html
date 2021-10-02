@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+
+    <div class="container mt">
+
+<div class="container text-center">
+
+    <img
+    class="image-fluid"
+    style="width:150px"
+    src="/assets/books.png"/>
+</div>
+
+        <div class="col-md-6 offset-md-3">
+                <h1 class="text-center">SIGN UP</h1>
+
+                <form (ngSubmit)="formSubmit()">                  
+                   
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Username</mat-label>
+                        <input name="userName"
+                        [(ngModel)]= "user.username"
+                        required
+                        type="text" matInput />
+                        <mat-hint>user name must be unique !!. </mat-hint>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" 
+                        name="Password"
+                        [(ngModel)]= "user.password"
+                        required
+                        matInput />
+                        
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        
+                        <button type="submit" mat-raised-button color="primary">Signup</button>
+
+                    </div>
+
+
+                </form>
+        </div>
+
+
+    </div>
+</div>
