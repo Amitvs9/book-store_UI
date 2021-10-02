@@ -46,9 +46,11 @@ Step 2- Second run angular application to read api data through UI
 Now application is up and running
 
 ## How to use this book-store app
+
   ## Login
 - Open the URL in your browser : http://localhost:4200
 - User can Login as Admin User (by default one admin user alredy registered with credentials username: Admin and password: Admin)
+
 ### 1. GET : http://localhost:4200/login
 
 <img width="786" alt="login" src="https://user-images.githubusercontent.com/45259611/135732160-aec0f90d-51c4-4c71-bfc1-25cd4d75d009.png">
@@ -57,7 +59,7 @@ Now application is up and running
 
 <img width="1176" alt="InvalifLogin" src="https://user-images.githubusercontent.com/45259611/135732185-c76f71fb-c7bb-4cea-ba64-dc46c7fcea60.png">
 
- ## *DashBaord
+ ## * DashBoard
 ### 2. GET : http://localhost:4200/dashboard
  * After successfully login User can see all avaiable books . 
 
@@ -74,12 +76,14 @@ Now application is up and running
 ### 4. GET : http://localhost:4200/signup (Optional - feature)
 - Admin sign-up is not enable in this app.
 - only normal User sign-up normal-user sign-up can be done.  
-- 
+
 <img width="1171" alt="signup" src="https://user-images.githubusercontent.com/45259611/135732218-656a7023-edc2-4ba4-9228-27e4c22a4f08.png">
 
  * If Sign-up User alredy register 
  
 <img width="1176" alt="UserExist" src="https://user-images.githubusercontent.com/45259611/135732224-a50a2d66-1c38-4787-a56b-0b72f0be3c39.png">
+
+
 
 
 
