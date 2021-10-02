@@ -3,9 +3,9 @@
 
 ## Description:
 Book-Store app can perform following actions..
-- login as a admin user.
-- As a admin can see list of available books 
-- As a admin can see deatils of any particular book.
+- login as an admin user.
+- As an admin can see list of available books 
+- As an admin can see deatils of any particular book.
 - sign up as a normal user.
 
 <img width="1277" alt="Login_page" src="https://user-images.githubusercontent.com/45259611/135731861-b6d54771-6d68-45f4-bcc5-4f9df70d4b3f.png">
