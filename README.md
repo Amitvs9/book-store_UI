@@ -37,10 +37,11 @@ Step 1- First run backend spring-boot application
 Step 2- Second run angular application to read api data through UI
 - Checkout the code / Download from git repo(https://github.com/Amitvs9/book-store_UI)
 - checkout : open git bash and run command `git clone https://github.com/Amitvs9/book-store_UI`
+- Prerequisites System should have Node JS or NPM installed 
 - open command prompt(cmd)
 - go inside the project folder
-- run command `run npm install`
-- once its successfully build run command `ng serve` 
+- run command `npm install -g @angular/cli`
+- once its successfully done run command `ng serve` 
 
 
 Now application is up and running
